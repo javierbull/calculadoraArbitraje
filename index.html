@@ -2,40 +2,41 @@
 <html lang="es">
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<title>Calculadora de Gastos Arbitrales</title>
-	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
-	<link rel="icon" href="img/icons/favicon.png" type="image/x-icon" />
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
-	<link
-		href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
-		rel="stylesheet">
-	<!-- CSS Files -->
-	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/mq.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Calculadora de Gastos Arbitrales</title>
+    <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+    <link rel="icon" href="img/icons/favicon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mq.css">
 
 </head>
 
 <body>
-	<header>
-		<nav class="navbar-calculadora">
+    <header>
+        <nav class="navbar-calculadora">
             <div class="container-fluid navbarcalculadora-container">
                 <div class="nav-brand">
                     <img src="img/logos/logo_cear.png" class="nav-brand__img" alt="cear latiniamericano">
-                </div>      
-                <button class="btn primary-button">
+                </div>
+                <button class="btn primary-button" data-bs-toggle="offcanvas" href="#offcanvasTarifario"
+                    aria-controls="offcanvasTarifario">
                     Tarifarios
                 </button>
             </div>
         </nav>
-	</header>
+    </header>
 
-	<main>
+    <main>
 
     </main>
 
@@ -43,56 +44,151 @@
 
     </footer>
 
-	<!-- LOADER -->
-	<!-- <div class="loader">
+    <!-- LOADER -->
+    <!-- <div class="loader">
 		<img src="img/icons/loader.gif" alt="">
 		<span>Cargando...</span>
 	</div> -->
-	<!-- END LOADER -->
+    <!-- END LOADER -->
 
-	<!-- Modals -->
+    <!-- Off canvas -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasTarifario"
+        aria-labelledby="offcanvasTarifarioLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasTarifarioLabel">Offcanvas</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="accordion" id="accordionCear">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Accordion Item #1
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionCear">
+                    <div class="accordion-body">
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">Item</th>
+                                <th scope="col">Pago</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Solicitud de arbitraje</td>
+                                <td>S/ 300.00 (Incluye IGV)</td>
+                              </tr>
+                              <tr>
+                                <td>Designación de Árbitros</td>
+                                <td>S/ 590.00 (Incluye IGV)</td>
+                              </tr>
+                              <tr>
+                                <td>Recusación de Árbitros</td>
+                                <td>S/ 3,000.00 (Incluye IGV)</td>
+                              </tr>
+                              <tr>
+                                <td>Copia Certificada</td>
+                                <td>S/ 1.00 (Por Hoja) (Incluye IGV)</td>
+                              </tr>
+                              <tr>
+                                <td>Copia de Video</td>
+                                <td>S/ 100.00 (Incluye IGV)</td>
+                              </tr>
+                              <tr>
+                                <td>Copia de Audio</td>
+                                <td>S/ 50.00 (Incluye IGV)</td>
+                              </tr>
+                              <tr>
+                                <td>Inscripción y Renovación - Árbitro</td>
+                                <td>S/ 1,000.00 (Incluye IGV)</td>
+                              </tr>
+                              <tr>
+                                <td>Inscripción y Renovación - Adjudicador</td>
+                                <td>S/ 1,000.00 (Incluye IGV)</td>
+                              </tr>
+                              <tr>
+                                <td>Inscripción y Renovación - Perito</td>
+                                <td>S/ 1,000.00 (Incluye IGV)</td>
+                              </tr>
 
+                            </tbody>
+                          </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionCear">
+                    <div class="accordion-body">
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionCear">
+                    <div class="accordion-body">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <!-- End off canvas -->
 
-	<!-- Modal -->
-	<div class="modal fade modalInfo" id="modalContraOlvidada" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-				</div>
-				<div class="modal-body">
-					<h1 class="modal-title marginBottom-1-5 text-center">Recuperación de contraseña</h1>
-					<p class="text-center">
-						Ingresa tu usuario para solicitar la recuperación de tu contraseña:
-					</p>
-					<div class="marginBottom-1">
-						<label for="inputUser" class="form-label">Usuario</label>
-						<input type="text" class="form-control" id="inputUser">
-						<small class="text-help">
-							<span class="material-icons">
-								report_problem
-							</span>
-							El usuario es incorrecto
-						</small>
-					</div>
-				</div>
-				<div class="modal-footer marginBottom-2">
-					<button type="button" class="btn btn-large primary-button" data-bs-dismiss="modal">
-						Solicitar recuperación
-					</button>
-					<button type="button" class="btn btn-large link-button" data-bs-dismiss="modal">
-						Cancelar
-					</button>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Fin Modals -->
+    <!-- Modals -->
+    <!-- Modal -->
+    <div class="modal fade modalInfo" id="modalContraOlvidada" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h1 class="modal-title marginBottom-1-5 text-center">Recuperación de contraseña</h1>
+                    <p class="text-center">
+                        Ingresa tu usuario para solicitar la recuperación de tu contraseña:
+                    </p>
+                    <div class="marginBottom-1">
+                        <label for="inputUser" class="form-label">Usuario</label>
+                        <input type="text" class="form-control" id="inputUser">
+                        <small class="text-help">
+                            <span class="material-icons">
+                                report_problem
+                            </span>
+                            El usuario es incorrecto
+                        </small>
+                    </div>
+                </div>
+                <div class="modal-footer marginBottom-2">
+                    <button type="button" class="btn btn-large primary-button" data-bs-dismiss="modal">
+                        Solicitar recuperación
+                    </button>
+                    <button type="button" class="btn btn-large link-button" data-bs-dismiss="modal">
+                        Cancelar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Modals -->
 
-	<!--   Bootstrap JS Files   -->
-	<script src="js/jquery.3.2.1.min.js"></script>
-	<script src="js/bootstrap.bundle.min.js"></script>
-	<script src="js/main.js"></script>
+    <!--   Bootstrap JS Files   -->
+    <script src="js/jquery.3.2.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 
