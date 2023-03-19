@@ -135,6 +135,7 @@ hr {
     color: var(--grey);
     opacity: 1;
 }
+
 /* End buttons */
 
 /* Inputs */
@@ -152,7 +153,8 @@ input[type=number]::-webkit-outer-spin-button {
 .container-fluid {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
-}    
+}
+
 /* End containers */
 
 
@@ -166,6 +168,7 @@ input[type=number]::-webkit-outer-spin-button {
     text-transform: uppercase;
     font-size: 1.5rem;
 }
+
 /* end off canvas */
 
 /* Accordion */
@@ -195,72 +198,103 @@ input[type=number]::-webkit-outer-spin-button {
     border-radius: 0;
     overflow-anchor: none;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
-  }
+}
 
-  .accordion-button:focus {
+.accordion-button:focus {
     z-index: 3;
     border-color: var(--primary-dark);
     color: var(--primary-dark);
     outline: 0;
     background-color: var(--white);
     box-shadow: none;
-  }
+}
 
-  .accordion-button:not(.collapsed) {
+.accordion-button:not(.collapsed) {
     color: var(--primary-dark);
     background-color: var(--white);
     box-shadow: none;
-  }
+}
 
-  .accordion-button:not(.collapsed)::after {
+.accordion-button:not(.collapsed)::after {
     background-image: url("../img/icons/chevron-down.svg");
-  }
-  .accordion-button::after {
+}
+
+.accordion-button::after {
     background-image: url("../img/icons/chevron-down.svg");
     width: 2rem;
     height: 2rem;
     background-size: 2rem;
-  }
+}
 
-  .accordion-item {
+.accordion-item {
     background-color: var(--white);
     border: 1px solid rgba(0, 0, 0, 0.25);
-  }
+}
+
 /* End accordion */
 /* Tables */
 .table {
     /* background-color: var(--white); */
     color: var(--primary-dark);
-  }
+}
 
-  .table > :not(:first-child) {
+.table> :not(:first-child) {
     border-top: none;
-  }
+}
 
-  .table thead tr {
+.table thead tr {
     border-bottom: 2px solid var(--primary-dark);
-  }
+}
 
-  .table thead tr th {
+.table thead tr th {
     background-color: var(--primary-extra-light);
     vertical-align: middle;
     padding: 1rem;
     color: var(--primary-dark);
-  }
+}
 
-  .table tfoot tr {
+.table tfoot tr {
     border-top: 2px solid var(--primary-dark);
-  }
-  
-  .table tfoot tr td {
+}
+
+.table tfoot tr td {
     /* background-color: pink; */
     vertical-align: middle;
     padding: .5rem 1rem;
     font-weight: 600;
-  }
+}
+
 /* End tables */
 
 /* Tabs */
+.nav-tabs {
+    border-bottom: 1px solid var(--grey);
+}
+
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:focus {
+    border-color: var(--grey) var(--grey) var(--grey);
+    isolation: isolate;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+    color: var(--primary-dark);
+    background-color: var(--white);
+    border-color: var(--grey) var(--grey) var(--white);
+}
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: var(--grey-dark);
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: var(--primary);
+}
 
 /* End tabs */
 
@@ -278,12 +312,12 @@ input[type=number]::-webkit-outer-spin-button {
 .nav-brand__img {
     height: 4rem;
 }
+
 .navbarcalculadora-container {
     display: flex;
     gap: 1rem;
     align-items: center;
     justify-content: space-between;
 }
+
 /* END NAVBAR */
-
-
