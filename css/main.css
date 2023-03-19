@@ -154,7 +154,36 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0;
 }
 
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--primary-dark);
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
 
+  .form-control:focus {
+    color: var(--primary-dark);
+    background-color: var(--white);
+    border-color: var(--primary-dark);
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(0, 128, 159, .25)
+    ;
+  }
 
 /* End inputs */
 
@@ -297,7 +326,7 @@ input[type=number]::-webkit-outer-spin-button {
     font-weight: 500;
     display: block;
     padding: 0.5rem 1rem;
-    color: var(--grey-dark);
+    color: var(--primary-dark);
     text-decoration: none;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -403,5 +432,15 @@ input[type=number]::-webkit-outer-spin-button {
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
     box-shadow: var(--shadow);
+}
+
+.calculator-header {
+    display: flex;
+    align-items: center;
+}
+
+.calculator-header .btn-icon span {
+ font-size: 1.75rem;
+ color: var(--primary-dark);
 }
   /* END CALCULADORA */
