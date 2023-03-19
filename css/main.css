@@ -362,6 +362,12 @@ input[type=number]::-webkit-outer-spin-button {
   background-color: var(--primary);
 }
 
+.nav-pills .nav-link:hover.active,
+.nav-pills .show > .nav-link:hover {
+  color: var(--white);
+  background-color: var(--primary-light);
+}
+
 .nav-pills .nav-link {
     padding: 1rem;
     border-radius: .5rem;
