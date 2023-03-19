@@ -40,7 +40,7 @@ body {
 main {
     background-color: var(--background);
     min-height: calc(100vh - 82px);
-    padding-top: 2rem;
+    padding-top: 7rem;
     padding-bottom: 2rem;
 }
 
@@ -377,7 +377,8 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* NAVBAR */
 .navbar-calculadora {
-    position: relative;
+    position: fixed;
+    width: 100%;
     background-color: var(--white);
     padding-top: .5rem;
     padding-bottom: .5rem;
