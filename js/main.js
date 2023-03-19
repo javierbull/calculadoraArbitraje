@@ -9,9 +9,14 @@ $(document).ready(function () {
    })
    // END TOOLTIP
 
-  $("#show-resumen").click(function () {
-    $("#content-sorteo").hide();
-    $("#content-resumen").show();
+  $("#pills-gastos-arbitrales-tab").click(function () {
+    $("#header-gastos-arbitrales").show();
+    $("#header-arbitraje-emergencia").hide();
+  });
+
+  $("#pills-arbitraje-emergencia-tab").click(function () {
+    $("#header-gastos-arbitrales").hide();
+    $("#header-arbitraje-emergencia").show();
   });
 });
 
