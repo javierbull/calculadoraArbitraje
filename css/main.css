@@ -85,9 +85,13 @@ hr {
 }
 
 .btn-icon {
-    display: flex;
+    display: flex !important;
     gap: .5rem;
     align-items: center;
+}
+
+.btn-icon span, .btn-icon ion-icon {
+    font-size: 1.5rem;
 }
 
 .primary-button {
@@ -290,6 +294,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .nav-link {
+    font-weight: 500;
     display: block;
     padding: 0.5rem 1rem;
     color: var(--grey-dark);
@@ -304,7 +309,16 @@ input[type=number]::-webkit-outer-spin-button {
 /* End tabs */
 
 /* tabs pills */
-
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: var(--white);
+  background-color: var(--primary);
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+}
 /* End tabs pills */
 
 /* END ESTILOS GENERALES */
