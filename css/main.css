@@ -142,6 +142,7 @@ hr {
     display: flex !important;
     gap: .5rem;
     align-items: center;
+    justify-content: center;
 }
 
 .btn-icon span, .btn-icon ion-icon {
@@ -369,6 +370,7 @@ input[type=number]::-webkit-outer-spin-button {
 .nav-pills .nav-link {
     padding: 1rem;
 }
+
 /* End tabs pills */
 
 /* END ESTILOS GENERALES */
