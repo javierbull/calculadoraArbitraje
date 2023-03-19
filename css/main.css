@@ -360,15 +360,21 @@ input[type=number]::-webkit-outer-spin-button {
 .nav-pills .show > .nav-link {
   color: var(--white);
   background-color: var(--primary);
-  border-radius: .5rem;
-  -webkit-border-radius: .5rem;
-  -moz-border-radius: .5rem;
-  -ms-border-radius: .5rem;
-  -o-border-radius: .5rem;
 }
 
 .nav-pills .nav-link {
     padding: 1rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
+.nav-pills .nav-link:hover {
+    padding: 1rem;
+    background-color: var(--primary-extra-light);
+    color: var(--primary-dark);
 }
 
 /* End tabs pills */
