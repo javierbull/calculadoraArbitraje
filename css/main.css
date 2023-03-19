@@ -40,6 +40,8 @@ body {
 main {
     background-color: var(--background);
     min-height: calc(100vh - 82px);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 hr {
@@ -144,6 +146,16 @@ hr {
 
 .btn-icon span, .btn-icon ion-icon {
     font-size: 1.5rem;
+}
+
+.btn-tooltip {
+    /* background-color: pink; */
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-block {
@@ -387,9 +399,10 @@ input[type=number]::-webkit-outer-spin-button {
 .main-header {
     width: 60vw;
     text-align: center;
+    justify-content: flex-start;
     margin-left: auto;
     margin-right: auto;
-    padding: 2rem 0;
+    margin-bottom: 2rem;
 }
 
 #header-arbitraje-emergencia {
@@ -446,9 +459,10 @@ input[type=number]::-webkit-outer-spin-button {
 .calculator-header {
     display: flex;
     align-items: center;
+    gap: .5rem;
 }
 
-.calculator-header .btn-icon span {
+.calculator-header .btn-tooltip span {
  font-size: 1.75rem;
  color: var(--primary-dark);
 }

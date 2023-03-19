@@ -31,7 +31,18 @@
 /* fin tablet portrait */
 /* Cell landscape */
 @media (max-width: 736px) {
+    /* Calculadora */
+    .card-calculadora {
+        width: 100%;
+    }
 
+    .nav-pills {
+        /* background-color: pink; */
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* End calculadora/ */
 }
 /* Fin cell landscape */
 
