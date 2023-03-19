@@ -16,6 +16,11 @@
 /* Fin Big cell landscape */
 /* Tablet portrait */
 @media (max-width: 768px) {
+    /* off canvas */
+.offcanvas {
+    width: 100%;
+}
+/* end off canvas */
 
 }
 /* fin tablet portrait */

@@ -30,7 +30,7 @@
                 </div>
                 <button class="btn primary-button" data-bs-toggle="offcanvas" href="#offcanvasTarifario"
                     aria-controls="offcanvasTarifario">
-                    Tarifarios
+                    Ver Tarifas
                 </button>
             </div>
         </nav>
@@ -55,7 +55,7 @@
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasTarifario"
         aria-labelledby="offcanvasTarifarioLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasTarifarioLabel">Offcanvas</h5>
+            <h5 class="offcanvas-title" id="offcanvasTarifarioLabel">Tarifas</h5>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
@@ -155,7 +155,28 @@
                             <div class="tab-content" id="myTabContent">
                                 <div class="tab-pane fade show active" id="home" role="tabpanel"
                                     aria-labelledby="arbitro-unico-tab">
-                                    Arbitro unico
+                                    
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Cuantía de Pretenciones</th>
+                                                    <th scope="col">%</th>
+                                                    <th scope="col">Fórmula</th>
+                                                    <th scope="col">Monto Máx (Sin IGV)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1. De S/ 0.00 a 36,000.00</td>
+                                                    <td>0.00 %</td>
+                                                    <td>S/ 3,819.00 +0.00 % sobre la cantidad que exceda de S/ 0.00</td>
+                                                    <td>S/ 3,819.00</td>
+                                                </tr>
+                                                
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                                 <div class="tab-pane fade" id="tribunal-arbitral" role="tabpanel" aria-labelledby="tribunal-arbitral-tab">
                                     Tribunal arbitral
@@ -172,13 +193,28 @@
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseThreeTarifas" aria-expanded="false"
                             aria-controls="collapseThreeTarifas">
-                            Accordion Item #3
+                            Tarifa de Arbitraje de Emergencia
                         </button>
                     </h2>
                     <div id="collapseThreeTarifas" class="accordion-collapse collapse"
                         aria-labelledby="headingThreeTarifas" data-bs-parent="#accordionCear">
                         <div class="accordion-body">
-
+                            Lorem ipsum dolor sit amet.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFourTarifas">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFourTarifas" aria-expanded="false"
+                            aria-controls="collapseFourTarifas">
+                            Arbitraje Menor Cuantía
+                        </button>
+                    </h2>
+                    <div id="collapseFourTarifas" class="accordion-collapse collapse"
+                        aria-labelledby="headingFourTarifas" data-bs-parent="#accordionCear">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet.
                         </div>
                     </div>
                 </div>
