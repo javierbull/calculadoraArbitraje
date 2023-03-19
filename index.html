@@ -84,37 +84,59 @@
                 <div class="tab-content" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-gastos-arbitrales" role="tabpanel"
                         aria-labelledby="pills-gastos-arbitrales-tab">
-                        <div class="calculator-header">
-                            <h2 class="heading-3 mb-0">Pretenciones Determinadas</h2>
-                            <button type="button" class="btn btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
-                                <span class="material-icons">
-                                    live_help
-                                </span>
+                        <form>
+                            <div class="calculator-header">
+                                <h2 class="heading-3 mb-0">Pretenciones Determinadas</h2>
+                                <button type="button" class="btn btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+                                    <span class="material-icons">
+                                        live_help
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="mb-3">
+                                <label for="inputCuantiaDeterminada" class="form-label">Monto de la cuantía (S/):</label>
+                                <input type="text" class="form-control" id="inputCuantiaDeterminada">
+                            </div>
+                            <div class="calculator-header">
+                                <h2 class="heading-3 mb-0">Pretenciones Indeterminadas</h2>
+                                <button type="button" class="btn btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+                                    <span class="material-icons">
+                                        live_help
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="mb-3">
+                                <label for="inputCuantiaIndeterminada" class="form-label">Monto de la cuantía (S/):</label>
+                                <input type="text" class="form-control" id="inputCuantiaIndeterminada">
+                            </div>
+                            <div class="mb-3">
+                                <label for="inputNumeroPretenciones" class="form-label">Número de pretensiones indeterminadas:</label>
+                                <input type="number" class="form-control" id="inputNumeroPretenciones">
+                            </div>
+                            <button class="btn primary-button btn-block">
+                                Calcular
                             </button>
-                        </div>
-                        <div class="mb-3">
-                            <label for="inputCuantiaDeterminada" class="form-label">Monto de la cuantía (S/):</label>
-                            <input type="text" class="form-control" id="inputCuantiaDeterminada">
-                        </div>
-                        <div class="calculator-header">
-                            <h2 class="heading-3 mb-0">Pretenciones Indeterminadas</h2>
-                            <button type="button" class="btn btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
-                                <span class="material-icons">
-                                    live_help
-                                </span>
-                            </button>
-                        </div>
-                        <div class="mb-3">
-                            <label for="inputCuantiaIndeterminada" class="form-label">Monto de la cuantía (S/):</label>
-                            <input type="text" class="form-control" id="inputCuantiaIndeterminada">
-                        </div>
-                        <div class="mb-0">
-                            <label for="inputNumeroPretenciones" class="form-label">Número de pretensiones indeterminadas:</label>
-                            <input type="number" class="form-control" id="inputNumeroPretenciones">
-                        </div>
+                        </form>
+
                     </div>
                     <div class="tab-pane fade" id="pills-arbitraje-emergencia" role="tabpanel" aria-labelledby="pills-arbitraje-emergencia-tab">
-                        2
+                        <form>
+                            <div class="calculator-header">
+                                <h2 class="heading-3 mb-0">Pretenciones Determinadas</h2>
+                                <button type="button" class="btn btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+                                    <span class="material-icons">
+                                        live_help
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="mb-3">
+                                <label for="inputCuantiaDeterminadaAe" class="form-label">Monto de la cuantía (S/):</label>
+                                <input type="text" class="form-control" id="inputCuantiaDeterminadaAe">
+                            </div>
+                            <button class="btn primary-button btn-block">
+                                Calcular
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
