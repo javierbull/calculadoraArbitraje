@@ -38,12 +38,15 @@
 
     <main>
         <div class="container">
+            <!-- main header -->
             <div class="main-header" id="header-gastos-arbitrales">
                 <h1>
                     Calculadora de Gastos Arbitrales
                 </h1>
                 <p>
-                    Permite calcular los gastos arbitrales respecto de las pretensiones determinadas e indeterminadas que sometan las partes a controversia ante un Árbitro Único o Tribunal Arbitral, así como el servicio de administración del proceso arbitral.
+                    Permite calcular los gastos arbitrales respecto de las pretensiones determinadas e indeterminadas
+                    que sometan las partes a controversia ante un Árbitro Único o Tribunal Arbitral, así como el
+                    servicio de administración del proceso arbitral.
                 </p>
             </div>
 
@@ -52,9 +55,41 @@
                     Calculadora de Arbitraje de Emergencia
                 </h1>
                 <p>
-                    Permite calcular los gastos arbitrales respecto de las pretensiones cuantificables vinculadas al servicio de arbitraje de emergencia.
+                    Permite calcular los gastos arbitrales respecto de las pretensiones cuantificables vinculadas al
+                    servicio de arbitraje de emergencia.
                 </p>
             </div>
+            <!-- End main header -->
+
+            <!-- Calculadora -->
+            <div class="card-calculadora">
+                <ul class="nav nav-pills nav-fill mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-gastos-arbitrales-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-gastos-arbitrales" type="button" role="tab" aria-controls="pills-gastos-arbitrales"
+                            aria-selected="true">
+                            Calcular Gastos Arbitrales
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-arbitraje-emergencia-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-arbitraje-emergencia" type="button" role="tab" aria-controls="pills-arbitraje-emergencia"
+                            aria-selected="false">
+                            Calcular Arbitraje de Emergencia
+                        </button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-gastos-arbitrales" role="tabpanel"
+                        aria-labelledby="pills-gastos-arbitrales-tab">
+                        1
+                    </div>
+                    <div class="tab-pane fade" id="pills-arbitraje-emergencia" role="tabpanel" aria-labelledby="pills-arbitraje-emergencia-tab">
+                        2
+                    </div>
+                </div>
+            </div>
+            <!-- End calculadora -->
 
         </div>
     </main>
@@ -65,9 +100,9 @@
 
     <!-- LOADER -->
     <div class="loader">
-		<img src="img/icons/loader.gif" alt="">
-		<span>Cargando...</span>
-	</div>
+        <img src="img/icons/loader.gif" alt="">
+        <span>Cargando...</span>
+    </div>
     <!-- END LOADER -->
 
     <!-- Off canvas -->
@@ -154,27 +189,29 @@
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active" id="arbitro-unico-tab" data-bs-toggle="tab"
-                                        data-bs-target="#home" type="button" role="tab" aria-controls="home"
+                                        data-bs-target="#arbitro-unico" type="button" role="tab" aria-controls="arbitro-unico"
                                         aria-selected="true">Árbitro Único
                                     </button>
                                 </li>
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link" id="tribunal-arbitral-tab" data-bs-toggle="tab"
-                                        data-bs-target="#tribunal-arbitral" type="button" role="tab" aria-controls="tribunal-arbitral"
-                                        aria-selected="false">Tribunal Arbitral Colegiado
+                                        data-bs-target="#tribunal-arbitral" type="button" role="tab"
+                                        aria-controls="tribunal-arbitral" aria-selected="false">Tribunal Arbitral
+                                        Colegiado
                                     </button>
                                 </li>
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link" id="servicio-administracion-tab" data-bs-toggle="tab"
-                                        data-bs-target="#servicio-administracion" type="button" role="tab" aria-controls="servicio-administracion"
-                                        aria-selected="false">Servicio de administración
+                                        data-bs-target="#servicio-administracion" type="button" role="tab"
+                                        aria-controls="servicio-administracion" aria-selected="false">Servicio de
+                                        administración
                                     </button>
                                 </li>
                             </ul>
                             <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                <div class="tab-pane fade show active" id="arbitro-unico" role="tabpanel"
                                     aria-labelledby="arbitro-unico-tab">
-                                    
+
                                     <div class="table-responsive">
                                         <table class="table">
                                             <thead>
@@ -192,15 +229,17 @@
                                                     <td>S/ 3,819.00 +0.00 % sobre la cantidad que exceda de S/ 0.00</td>
                                                     <td>S/ 3,819.00</td>
                                                 </tr>
-                                                
+
                                             </tbody>
                                         </table>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade" id="tribunal-arbitral" role="tabpanel" aria-labelledby="tribunal-arbitral-tab">
+                                <div class="tab-pane fade" id="tribunal-arbitral" role="tabpanel"
+                                    aria-labelledby="tribunal-arbitral-tab">
                                     Tribunal arbitral
                                 </div>
-                                <div class="tab-pane fade" id="servicio-administracion" role="tabpanel" aria-labelledby="servicio-administracion-tab">
+                                <div class="tab-pane fade" id="servicio-administracion" role="tabpanel"
+                                    aria-labelledby="servicio-administracion-tab">
                                     Servicio de administracion
                                 </div>
                             </div>

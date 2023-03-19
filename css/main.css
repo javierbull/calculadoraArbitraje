@@ -77,6 +77,11 @@ hr {
 .btn {
     text-transform: uppercase;
     font-weight: 600;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
 }
 
 .btn-icon {
@@ -87,12 +92,12 @@ hr {
 
 .primary-button {
     background-color: var(--primary);
-    color: var(--grey-light);
+    color: var(--white);
 }
 
 .primary-button:hover {
-    background-color: var(--primary-dark);
-    color: var(--grey-light);
+    background-color: var(--primary-light);
+    color: var(--white);
 }
 
 .primary-button:focus {
@@ -298,6 +303,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* End tabs */
 
+/* tabs pills */
+
+/* End tabs pills */
+
 /* END ESTILOS GENERALES */
 
 /* NAVBAR */
@@ -366,3 +375,19 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 1.5rem;
   }
   /* END LOADER */
+
+  /* CALCULADORA */
+  .card-calculadora {
+    background-color: var(--white);
+    width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    box-shadow: var(--shadow);
+}
+  /* END CALCULADORA */
