@@ -146,6 +146,7 @@ hr {
 }
 
 .btn-icon span, .btn-icon ion-icon {
+    /* background-color: tomato; */
     font-size: 1.5rem;
 }
 
@@ -307,6 +308,15 @@ input[type=number]::-webkit-outer-spin-button {
     vertical-align: middle;
     padding: 1rem;
     color: var(--primary-dark);
+    font-size: 1.25rem;
+}
+
+.table thead tr th:first-child {
+    border-top-left-radius: .5rem;
+}
+
+.table thead tr th:last-child {
+    border-top-right-radius: .5rem;
 }
 
 .table tfoot tr {
@@ -346,6 +356,7 @@ input[type=number]::-webkit-outer-spin-button {
     padding: 0.5rem 1rem;
     color: var(--primary-dark);
     text-decoration: none;
+    text-transform: uppercase;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 
@@ -469,6 +480,7 @@ input[type=number]::-webkit-outer-spin-button {
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
     box-shadow: var(--shadow);
+    margin-bottom: 2rem;
 }
 
 .calculator-header {
@@ -482,3 +494,19 @@ input[type=number]::-webkit-outer-spin-button {
  color: var(--primary-dark);
 }
   /* END CALCULADORA */
+
+/* SECTION RESULTADOS */
+.card-resultados {
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+}
+
+
+/* END SECTIONS RESULTADOS */
