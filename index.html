@@ -113,7 +113,7 @@
                                 <label for="inputNumeroPretenciones" class="form-label">Número de pretensiones indeterminadas:</label>
                                 <input type="number" class="form-control" id="inputNumeroPretenciones">
                             </div>
-                            <button class="btn primary-button btn-block" id="btn-calcular-gastos-arbitrales">
+                            <button class="btn primary-button btn-block">
                                 Calcular
                             </button>
                         </form>
@@ -133,7 +133,7 @@
                                 <label for="inputCuantiaDeterminadaAe" class="form-label">Monto de la cuantía (S/):</label>
                                 <input type="text" class="form-control" id="inputCuantiaDeterminadaAe">
                             </div>
-                            <button class="btn primary-button btn-block" id="btn-calcular-arbitraje-emergencia">
+                            <button class="btn primary-button btn-block">
                                 Calcular
                             </button>
                         </form>
@@ -141,145 +141,6 @@
                 </div>
             </div>
             <!-- End calculadora -->
-
-            <!-- Resultados Gatos arbitrales-->
-            <section class="section-resultados" id="section-resultados-gastos-arbitrales">
-                <div class="card-resultados">
-                    <div class="wrap-tables-resultados">
-                        <table class="table text-center table-columns-2 mb-0">
-                            <thead>
-                                <tr>
-                                    <th colspan="2">
-                                        Monto de la cuantía resultante por pretensiones indeterminadas
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Cálculo de honorarios de árbitro(s) por pretensión(es) indeterminada(s) (S/)</td>
-                                    <td>80.00</td>
-                                </tr>
-                                <tr>
-                                    <td>Cálculo de servicio de administración de arbitraje por pretensión(es) indeterminada(s) (S/)</td>
-                                    <td>80.00</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <div class="card-resultados">
-                    <ul class="nav nav-pills nav-fill mb-3" id="pills-tab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link btn-icon active" id="pills-resultado-arbitro-unico-tab" data-bs-toggle="pill"
-                                data-bs-target="#pills-resultado-arbitro-unico" type="button" role="tab" aria-controls="pills-resultado-arbitro-unico"
-                                aria-selected="true">
-                                <span class="material-icons">
-                                    person
-                                </span>
-                                Para Árbitro Único
-                            </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link btn-icon" id="pills-resultado-tribunal-arbitral-tab" data-bs-toggle="pill"
-                                data-bs-target="#pills-resultado-tribunal-arbitral" type="button" role="tab" aria-controls="pills-resultado-tribunal-arbitral"
-                                aria-selected="false">
-                                <span class="material-icons">
-                                    groups
-                                </span>
-                                Para Tribunal Arbitral
-                            </button>
-                        </li>
-                    </ul>
-                    <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="pills-resultado-arbitro-unico" role="tabpanel"
-                            aria-labelledby="pills-resultado-arbitro-unico-tab">
-                            
-                            <div class="wrap-tables-resultados">
-                                <table class="table text-center table-columns-2 mb-0">
-                                    <thead>
-                                        <tr>
-                                            <th class="text-center" colspan="2">
-                                                Honorarios Árbitro Único
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Cuantía determinada (S/)</td>
-                                            <td>5,800.39</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Cuantía Indeterminada (S/)</td>
-                                            <td>1,814.31</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Total (S/)</td>
-                                            <td>7,614.69</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Total con IGV 18% (S/)</td>
-                                            <td>8985.34</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <table class="table text-center table-columns-2 mb-0">
-                                    <thead>
-                                        <tr>
-                                            <th class="text-center rounded-none" colspan="2">
-                                                Servicio de Administración de Arbitraje
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Cuantía determinada (S/)</td>
-                                            <td>7,807.45</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Cuantía Indeterminada (S/)</td>
-                                            <td>3,819.00</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Total (S/)</td>
-                                            <td>11,083.04</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Total con Renta 8% (S/)</td>
-                                            <td>12,046.80</td>
-                                        </tr>
-                                    </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <td>
-                                                TOTAL (S/) <br>
-                                                Total con IMPUESTOS (S/)
-                                            </td>
-                                            <td>
-                                                18,697.73 <br>
-                                                21,032.14
-                                            </td>
-                                        </tr>
-                                    </tfoot>
-                                </table>
-                            </div>   
-
-                        </div>
-                        <div class="tab-pane fade" id="pills-resultado-tribunal-arbitral" role="tabpanel" aria-labelledby="pills-resultado-tribunal-arbitral-tab">
-                            Tribunal arbitral
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- End resultados gastos arbitrales -->
-
-            <!-- Resultados Arbitraje emergencia -->
-            <section class="section-resultados" id="section-resultados-arbitraje-emergencia">
-                
-            </section>
-            <!-- End resultados arbitraje emergencia -->
-
-
 
         </div>
     </main>
