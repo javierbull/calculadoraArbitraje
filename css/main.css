@@ -344,6 +344,10 @@ input[type=number]::-webkit-outer-spin-button {
     padding: .5rem 1rem;
 }
 
+.table-columns-2 td {
+    width: 50%;
+}
+
 .rounded-none {
     border-radius: 0 !important;
     -webkit-border-radius: 0 !important;
