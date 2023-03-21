@@ -543,7 +543,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .header-resultados {
     text-align: center;
-    margin: 2rem 0;
+    margin: 2rem 0 1.5rem 0;
 }
 
 .header-resultados .heading-3 {
@@ -558,4 +558,8 @@ input[type=number]::-webkit-outer-spin-button {
     flex-wrap: wrap;
 }
 
+
+.section-resultados, .box-red, .box-blue {
+    display: none;
+}
 /* END SECTION RESULTADOS */
