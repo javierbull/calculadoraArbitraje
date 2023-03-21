@@ -58,8 +58,13 @@
 .nav-brand__img {
     height: 2rem;
 }
-
 /* END NAVBAR */
+
+/* SECTION RESULTADOS */
+.wrap-btns-resultados .btn-icon {
+    width: 100%;
+}
+/* END SECTION RESULTADOS */
 }
 /* Fin cell portrait */
 
