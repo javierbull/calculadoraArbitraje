@@ -13,11 +13,13 @@ $(document).ready(function () {
   $("#pills-gastos-arbitrales-tab").click(function () {
     $("#header-gastos-arbitrales").show();
     $("#header-arbitraje-emergencia").hide();
+    $("#section-resultados-arbitraje-emergencia").hide();
   });
 
   $("#pills-arbitraje-emergencia-tab").click(function () {
     $("#header-gastos-arbitrales").hide();
     $("#header-arbitraje-emergencia").show();
+    $("#section-resultados-gastos-arbitrales").hide();
   });
 
   $("#btn-calcular-gastos-arbitrales").click(function () {
