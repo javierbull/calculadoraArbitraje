@@ -11,15 +11,15 @@ $(document).ready(function () {
 
 
   $("#pills-gastos-arbitrales-tab").click(function () {
-    $("#header-gastos-arbitrales").show();
     $("#header-arbitraje-emergencia").hide();
     $("#section-resultados-arbitraje-emergencia").hide();
+     $("#header-gastos-arbitrales").fadeIn("slow");
   });
 
   $("#pills-arbitraje-emergencia-tab").click(function () {
     $("#header-gastos-arbitrales").hide();
-    $("#header-arbitraje-emergencia").show();
     $("#section-resultados-gastos-arbitrales").hide();
+     $("#header-arbitraje-emergencia").fadeIn("slow");
   });
 
   $("#btn-calcular-gastos-arbitrales").click(function () {
