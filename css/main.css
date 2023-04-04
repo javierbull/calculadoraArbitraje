@@ -210,7 +210,6 @@ input[type=number]::-webkit-outer-spin-button {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
 }
-
 /* End containers */
 
 
@@ -426,6 +425,10 @@ input[type=number]::-webkit-outer-spin-button {
     background-color: var(--primary-extra-light);
     color: var(--primary-dark);
 }
+
+.nav-pills .btn-icon i {
+    font-size: 1.5rem;
+    }
 
 /* End tabs pills */
 
